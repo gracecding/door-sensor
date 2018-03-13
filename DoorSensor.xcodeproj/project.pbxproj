@@ -12,6 +12,8 @@
 		0FEC0C6C205758F600E93A1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FEC0C6A205758F600E93A1D /* Main.storyboard */; };
 		0FEC0C6E205758F600E93A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FEC0C6D205758F600E93A1D /* Assets.xcassets */; };
 		0FEC0C71205758F600E93A1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FEC0C6F205758F600E93A1D /* LaunchScreen.storyboard */; };
+		0FEC0C792057591900E93A1D /* GoogleService-Info (2).plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FEC0C782057591900E93A1D /* GoogleService-Info (2).plist */; };
+		7A738BC1571411AC7571DC08 /* Pods_DoorSensor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F027B50E3996A68318E0D9F0 /* Pods_DoorSensor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		0FEC0C6D205758F600E93A1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FEC0C70205758F600E93A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FEC0C72205758F600E93A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FEC0C782057591900E93A1D /* GoogleService-Info (2).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (2).plist"; sourceTree = "<group>"; };
+		2CB686F3030416B896EA7445 /* Pods-DoorSensor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorSensor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoorSensor/Pods-DoorSensor.debug.xcconfig"; sourceTree = "<group>"; };
+		C4DB507784C932850B8964FB /* Pods-DoorSensor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorSensor.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoorSensor/Pods-DoorSensor.release.xcconfig"; sourceTree = "<group>"; };
+		F027B50E3996A68318E0D9F0 /* Pods_DoorSensor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoorSensor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A738BC1571411AC7571DC08 /* Pods_DoorSensor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F79E7C65244DE27DDA443A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2CB686F3030416B896EA7445 /* Pods-DoorSensor.debug.xcconfig */,
+				C4DB507784C932850B8964FB /* Pods-DoorSensor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		0FEC0C5A205758F600E93A1D = {
 			isa = PBXGroup;
 			children = (
 				0FEC0C65205758F600E93A1D /* DoorSensor */,
 				0FEC0C64205758F600E93A1D /* Products */,
+				0F79E7C65244DE27DDA443A9 /* Pods */,
+				8ADDF03EA4AF99E8CAB0D76E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +78,17 @@
 				0FEC0C6D205758F600E93A1D /* Assets.xcassets */,
 				0FEC0C6F205758F600E93A1D /* LaunchScreen.storyboard */,
 				0FEC0C72205758F600E93A1D /* Info.plist */,
+				0FEC0C782057591900E93A1D /* GoogleService-Info (2).plist */,
 			);
 			path = DoorSensor;
+			sourceTree = "<group>";
+		};
+		8ADDF03EA4AF99E8CAB0D76E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F027B50E3996A68318E0D9F0 /* Pods_DoorSensor.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FEC0C75205758F600E93A1D /* Build configuration list for PBXNativeTarget "DoorSensor" */;
 			buildPhases = (
+				7B9CA0F759D1D3F878CEA1DA /* [CP] Check Pods Manifest.lock */,
 				0FEC0C5F205758F600E93A1D /* Sources */,
 				0FEC0C60205758F600E93A1D /* Frameworks */,
 				0FEC0C61205758F600E93A1D /* Resources */,
+				54FAE7D90FDBCC8E7DC4F7CC /* [CP] Embed Pods Frameworks */,
+				A6BBFC76111E5DAA39D6B786 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FEC0C792057591900E93A1D /* GoogleService-Info (2).plist in Resources */,
 				0FEC0C71205758F600E93A1D /* LaunchScreen.storyboard in Resources */,
 				0FEC0C6E205758F600E93A1D /* Assets.xcassets in Resources */,
 				0FEC0C6C205758F600E93A1D /* Main.storyboard in Resources */,
@@ -131,6 +162,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54FAE7D90FDBCC8E7DC4F7CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoorSensor/Pods-DoorSensor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B9CA0F759D1D3F878CEA1DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A6BBFC76111E5DAA39D6B786 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoorSensor/Pods-DoorSensor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0FEC0C5F205758F600E93A1D /* Sources */ = {
@@ -261,6 +340,7 @@
 		};
 		0FEC0C76205758F600E93A1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CB686F3030416B896EA7445 /* Pods-DoorSensor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7LVD2RH6W4;
@@ -274,6 +354,7 @@
 		};
 		0FEC0C77205758F600E93A1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4DB507784C932850B8964FB /* Pods-DoorSensor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7LVD2RH6W4;
